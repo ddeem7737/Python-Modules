@@ -34,3 +34,8 @@ first_text(pos1)
 print(f"Distance to center: {distance_calc(pos1, (0, 0, 0))}")
 print("Get a second set of coordinates")
 pos2 = get_player_pos()
+
+print(f"Second tuple: {tuple(pos2)}")
+print(f"It includes: X={pos2[0]}, Y={pos2[1]}, Z={pos2[2]}")
+print(f"Distance to center: {distance_calc(pos2, (0, 0, 0))}")
+print(f"Distance between points: {distance_calc(pos1, pos2)}")

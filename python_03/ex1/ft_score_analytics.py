@@ -25,7 +25,5 @@ def analyse_data():
         print(f"Score range: {max(lst) - min(lst)}")
 
 
-analyse_data()
-
 if __name__ == "__main__":
     analyse_data()
