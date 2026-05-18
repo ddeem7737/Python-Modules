@@ -151,7 +151,7 @@ class JSONExportPlugin:
 
 
 class DataStream:
- 
+
     def __init__(self) -> None:
         self._processors: list[DataProcessor] = []
 
@@ -194,7 +194,7 @@ class DataStream:
             if collected:
                 plugin.process_output(collected)
 
- 
+
 if __name__ == "__main__":
     print("=== Code Nexus - Data Pipeline ===")
 
@@ -222,7 +222,7 @@ if __name__ == "__main__":
     print(f"Send first batch of data on stream: {batch1}")
     stream.process_stream(batch1)
     stream.print_processors_stats()
- 
+
     csv_plugin = CSVExportPlugin()
     print("\nSend 3 processed data from each processor to a CSV plugin:")
     stream.output_pipeline(3, csv_plugin)
