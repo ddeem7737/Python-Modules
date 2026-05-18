@@ -1,5 +1,5 @@
 from abc import abstractmethod, ABC
-from typing import Any
+from typing import Any, Protocol
 
 
 class DataProcessor(ABC):
