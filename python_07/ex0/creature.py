@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class Creature(ABC):
     def __init__(self, name: str, creature_type: str) -> None:
         self.name = name
@@ -7,7 +8,7 @@ class Creature(ABC):
 
     def describe(self) -> str:
         return f"{self.name} is a {self.creature_type} type Creature"
-    
+
     @abstractmethod
     def attack(self) -> str:
         pass
@@ -17,7 +18,7 @@ class CreatureFactory(ABC):
     @abstractmethod
     def create_base(self) -> Creature:
         pass
-    
+
     @abstractmethod
     def create_evolved(self) -> Creature:
         pass
