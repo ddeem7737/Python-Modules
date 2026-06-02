@@ -30,7 +30,7 @@ class HealingCreatureFactory(CreatureFactory):
 
     def create_evolved(self) -> Creature:
         return Bloomelle()
-  
+
 
 class Shiftling(Creature, TransformCapability):
     def __init__(self) -> None:
